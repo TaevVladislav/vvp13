@@ -4,7 +4,8 @@ int main() {
 	int n; int z = 0;
 	cout << "Enter N - ";
 	cin >> n;
-	for (float i = n * 2 - 1; i > 0; i -= 2) {
+	float t = n * 2 - 1;
+	for (float i = 1; i <= t ; i += 2) {
 		z += i;
 		cout << "S = " << z << endl;
 	}
