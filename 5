@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	float a; int n; float z = 1; int t = -1;
+	cout << "Enter N - ";
+	cin >> n;
+	cout << "Enter A - ";
+	cin >> a;
+	for (int i = 1; i <= n; i++) {
+		z += pow(a, i) * t;
+		cout << z << endl;
+		t *= -1;
+	}
+	cout << "result = " << z;
+}
