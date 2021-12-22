@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int n; float z = 1;
+	cout << "Enter N - ";
+	cin >> n;
+	for (float i = 1.1; n > 0; n--) {
+		z *= i;
+		i += 0.1;
+	}
+	cout << "result = " << z;
+}
